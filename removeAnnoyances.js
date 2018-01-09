@@ -15,6 +15,7 @@
           "a[href$='/intern/inbox/']", // notification globe in intern
           "a[aria-label='Chat']", // chat icon in intern
           "div[id='pagelet_bluebar']", // workplace bar in workchat
+          "div[role='feed']", // workplace newsfeed
       ]
       .map(selector => document.querySelector(selector))
       .forEach(annoyance => annoyance && annoyance.remove());
