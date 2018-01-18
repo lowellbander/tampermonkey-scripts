@@ -6,6 +6,7 @@
 // @author       Lowell Bander
 // @match        *.facebook.com/*
 // @grant        none
+// @run-at      document-body
 // ==/UserScript==
 
 (function() {
@@ -20,5 +21,6 @@
       .map(selector => document.querySelector(selector))
       .forEach(annoyance => annoyance && annoyance.remove());
     }
+    removeAnnoyances();
     document.addEventListener("DOMNodeInserted", removeAnnoyances);
 })();
