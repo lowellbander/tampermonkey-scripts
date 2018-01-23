@@ -19,7 +19,11 @@
           "div[role='feed']", // workplace newsfeed
       ]
       .map(selector => document.querySelector(selector))
-      .forEach(annoyance => annoyance && annoyance.remove());
+      .forEach(annoyance => {
+          if (annoyance) {
+              annoyance.style.display = 'none';
+          }
+      });
     }
     removeAnnoyances();
     document.addEventListener("DOMNodeInserted", removeAnnoyances);
