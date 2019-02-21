@@ -5,6 +5,7 @@
 // @description  Remove Intern Notification Globe & Chat
 // @author       Lowell Bander
 // @match        *.facebook.com/*
+// @match        *.workplace.com/*
 // @grant        none
 // @run-at      document-body
 // ==/UserScript==
